@@ -14,13 +14,11 @@
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql="INSERT INTO posts (author, email, image, content)
-        VALUES ('$_POST[author]', '$_POST[email]', '$_POST[img]', '$_POST[content]')";
+        $sql="INSERT INTO posts (author, email, content)
+        VALUES ('$_POST[author]', '$_POST[email]', '$_POST[content]')";
 
-        if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+        if($conn && $sql){
+            echo "Data Submitted succesfully";
         }
 
         $conn->close();
