@@ -11,11 +11,10 @@ main {
     width: 80%;
     margin-left: 150px;
     padding: 30px 40px;
-    /* background-color: #dcdcdc; */
     height: auto;
 }
 
-main::after {
+main:after {
     content: '';
     display: block;
     clear: both;

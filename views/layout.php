@@ -15,7 +15,7 @@
                 <header>
                     <ul class="nav nav-pills nav-stacked navbar-left">
                         <li role="presentation" class="active">
-                            <a href='/'>Главная</a>
+                            <a href='/dayside-master/pro/'>Главная</a>
                         </li>
                         <li role="presentation">
                             <a href='?controller=pages&action=newQuest'>Новая задача</a>
