@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    var prevAuthor = $("#the-author");
+    var prevEmail = $("#the-email");
+    var prevText = $("#the-text");
+
+    $("#preview-input").on("click", function (e) {
+        e.preventDefault();
+        $(".the-post").show();
+        prevAuthor.html($("#author").val());
+        prevEmail.html($("#email").val());
+        prevText.html($("#content").val());
+
+    });
+
     $("#submit-input").click(function(e) {
         e.preventDefault();
         var author = $("#author").val();

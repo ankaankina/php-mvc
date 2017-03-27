@@ -24,3 +24,33 @@ input,
 textarea{
     margin-bottom: 15px;
 }
+
+#preview-input {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.the-post {
+    background-color: #dcdcdc;
+    border: 1px solid #868686;
+    border-radius: 10px;
+    display: none;
+    transition: width 1s linear 1s;
+    padding: 20px;
+}
+
+h4 {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-family: Verdana;
+}
+
+.the-email {
+    color: midnightblue;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 320px;
+    max-height: 240px;
+}
